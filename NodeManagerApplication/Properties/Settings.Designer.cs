@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NodeManager.Properties
+namespace NodeManagerApplication.Properties
 {
 
 

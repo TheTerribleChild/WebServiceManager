@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NodeManager
+namespace NodeManagerApplication
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
