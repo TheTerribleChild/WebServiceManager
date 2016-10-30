@@ -12,12 +12,15 @@ namespace NodeManager
     public class NodeManager
     {
 
-        private BroadcastListener broadcastListener;
+        private Utility.WebUtility.BroadcastListener broadcastListener;
 
 
         public NodeManager(string applicationName)
         {
-            broadcastListener = new BroadcastListener();
+            broadcastListener = new Utility.WebUtility.BroadcastListener();
+            broadcastListener.BroadcastReceived += BroadcastReceived;
+
+
         }
 
         public void Init()
@@ -34,6 +37,11 @@ namespace NodeManager
             }
 
 
+        }
+
+        private void BroadcastReceived(object sender, Utility.WebUtility.BroadcastReceivedEventArgs args)
+        {
+            Console.WriteLine(args.message + " " + args.endpoint.Address + " " + args.endpoint.Port);
         }
 
         public void Start()

@@ -50,7 +50,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BroadcastListener.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="NodeManager.cs" />
     <Compile Include="Program.cs" />

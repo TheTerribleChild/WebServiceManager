@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ServiceNode
@@ -17,7 +18,7 @@ namespace ServiceNode
             {
                 UdpClient client = new UdpClient();
                 IPEndPoint ip = new IPEndPoint(IPAddress.Broadcast, port);
-                byte[] bytes = Encoding.UTF8.GetBytes("stop");
+                byte[] bytes = Encoding.UTF8.GetBytes("THIS IS A REAL MESSAGE");
                 client.Send(bytes, bytes.Length, ip);
                 client.Close();
             }
